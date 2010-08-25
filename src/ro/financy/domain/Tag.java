@@ -25,10 +25,9 @@ public final class Tag {
 
         Tag tag = (Tag) o;
 
-        if (name != null ? !name.equals(tag.name) : tag.name != null) return false;
+        return !(name != null ? !name.equalsIgnoreCase(tag.name) : tag.name != null);
 
-        return true;
-    }
+        }
 
     @Override
     public int hashCode() {

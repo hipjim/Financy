@@ -39,13 +39,14 @@ public class TestAccount {
 
         tx_3.addTag(new Tag("Salar"));
 
+        tx_4.addTag(new Tag("Masina"));
+
 
         account.addTransaction(tx_1);
         account.addTransaction(tx_2);
         account.addTransaction(tx_3);
         account.addTransaction(tx_4);
 
-        System.out.println(account.getCurrentAmount());
-
+        System.out.println(account.getMoneySpentOn(new Tag("Masina")));
     }
 }
