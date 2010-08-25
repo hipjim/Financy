@@ -1,10 +1,9 @@
-package ro.financy.domain;
+package ro.financy.domain.transactions;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
-import ro.financy.domain.TransactionType;
+import ro.financy.domain.Amount;
+import ro.financy.domain.DomainObject;
+import ro.financy.domain.Tag;
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -14,7 +13,7 @@ import java.util.Set;
  * User: MacPro
  * Date: Jul 2, 2010
  */
-public final class Transaction extends DomainObject {
+public abstract class Transaction extends DomainObject {
 
     private final Amount amount;
     private final TransactionType type;

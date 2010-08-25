@@ -1,8 +1,9 @@
 package ro.financy.domain;
 
+import ro.financy.domain.transactions.Transaction;
+import ro.financy.domain.transactions.TransactionRecord;
+
 import java.util.Currency;
-import java.util.Date;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -63,10 +64,6 @@ public class Account extends DomainObject {
 
         return amount;
 
-    }
-
-    public List<Transaction> getTransactionsFromDay(final Date day) {
-        return transactionRecord.getTransactionsByDate(TransactionDate.create(day));
     }
 
 }

@@ -1,5 +1,7 @@
 package ro.financy.domain;
 
+import ro.financy.domain.transactions.Transaction;
+
 /**
  * Created by IntelliJ IDEA.
  * User: MacPro

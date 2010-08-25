@@ -1,4 +1,4 @@
-package ro.financy.domain;
+package ro.financy.domain.transactions;
 
 /**
  * Created by IntelliJ IDEA.

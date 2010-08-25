@@ -1,4 +1,6 @@
-package ro.financy.domain;
+package ro.financy.domain.transactions;
+
+import ro.financy.domain.Tag;
 
 import java.util.*;
 
@@ -18,7 +20,7 @@ public final class TransactionRecord {
     private final Map<TransactionDate, List<Transaction>> indexDate =
             new HashMap<TransactionDate, List<Transaction>>();
 
-    TransactionRecord() {
+    public TransactionRecord() {
         incomes = new LinkedHashSet<Transaction>();
         expenses = new LinkedHashSet<Transaction>();
 

@@ -1,4 +1,4 @@
-package ro.financy.domain;
+package ro.financy.domain.transactions;
 
 import org.apache.commons.lang.time.DateUtils;
 
